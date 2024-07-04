@@ -13,8 +13,8 @@ output=""
 for url in args.url:
  try:
   r = requests.get(url,timeout=5)
-  content= "url"
-  print(content)
+  content= url
+  print("\n", content)
   print("\n" + "="*120 + "\n") 
   print(r.text)
   output += r.text + "\n" + '=' * 120 + "\n"
